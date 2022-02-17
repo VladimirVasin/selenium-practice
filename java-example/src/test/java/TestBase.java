@@ -18,9 +18,12 @@ public class TestBase {
 
     @BeforeAll
     public static void start() {
-        driver = new ChromeDriver();
+        FirefoxOptions options = new FirefoxOptions();
+        options.setBinary(new FirefoxBinary(new File("c:\\Program Files\\Firefox Nightly\\firefox.exe")));
+        driver = new FirefoxDriver(options);
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         wait = new WebDriverWait(driver, 10);
+
 
     }
 
