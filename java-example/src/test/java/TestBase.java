@@ -22,7 +22,7 @@ public class TestBase {
         options.setBinary(new FirefoxBinary(new File("c:\\Program Files\\Firefox Nightly\\firefox.exe")));
         driver = new FirefoxDriver(options);
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-        wait = new WebDriverWait(driver, 10);
+        wait = new WebDriverWait(driver, 2);
 
 
     }
