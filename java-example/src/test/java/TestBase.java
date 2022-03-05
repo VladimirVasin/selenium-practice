@@ -7,6 +7,9 @@ import org.openqa.selenium.firefox.*;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.junit.jupiter.api.Test;
+import org.testng.Assert;
+
 
 import java.io.File;
 import java.util.concurrent.TimeUnit;
@@ -21,9 +24,8 @@ public class TestBase {
         FirefoxOptions options = new FirefoxOptions();
         options.setBinary(new FirefoxBinary(new File("c:\\Program Files\\Firefox Nightly\\firefox.exe")));
         driver = new FirefoxDriver(options);
-        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-        wait = new WebDriverWait(driver, 2);
-
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        wait = new WebDriverWait(driver, 5);
 
     }
 
@@ -31,6 +33,7 @@ public class TestBase {
         public static void stop() {
         driver.quit();
         driver = null;
+
     }
 
 }
