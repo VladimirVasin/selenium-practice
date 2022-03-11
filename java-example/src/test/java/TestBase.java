@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.junit.jupiter.api.Test;
 import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
 
 
 import java.io.File;
@@ -18,6 +19,7 @@ public class TestBase {
 
     public static WebDriver driver;
     public static WebDriverWait wait;
+    SoftAssert sa = new SoftAssert();
 
     @BeforeAll
     public static void start() {

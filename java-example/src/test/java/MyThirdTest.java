@@ -21,7 +21,7 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 
 public class MyThirdTest extends TestBase{
-    SoftAssert sa = new SoftAssert();
+
        public void loginToAdmin(){
         driver.get("http://localhost/litecart/admin/");
         driver.findElement(By.name("username")).sendKeys("admin");
@@ -53,7 +53,6 @@ public class MyThirdTest extends TestBase{
 
         Assert.assertTrue(h1.isDisplayed()==true );
         h1Text = h1.getText();
-        //System.out.println ("H1 text: " + h1Text);
         listDocs = driver.findElements(className("docs"));
         if(listDocs.size()>0) {
             runInternalMenuClick();

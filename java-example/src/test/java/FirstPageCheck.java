@@ -9,7 +9,6 @@ public class FirstPageCheck extends TestBase {
         FirstPageCheck firstPageCheck = new FirstPageCheck();
         WebElement h2 = firstPageCheck.h1;
         return h2;
-
     }
 
 }
