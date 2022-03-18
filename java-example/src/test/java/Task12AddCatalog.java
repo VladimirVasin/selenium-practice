@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.List;
 import java.util.UUID;
 
-public class Task12Test {
+public class Task12AddCatalog {
 
             public static WebDriver driver;
             public String host = "localhost";
@@ -49,7 +49,7 @@ public class Task12Test {
 
 
             @Test
-            public void Task12() {
+            public void Task12Catalog() {
 
                 WebDriverWait wait = new WebDriverWait(driver,5);
 
