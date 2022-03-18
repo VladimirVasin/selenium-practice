@@ -1,14 +1,8 @@
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
-import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.*;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.junit.jupiter.api.Test;
-import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
 
